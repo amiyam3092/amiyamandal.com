@@ -74,12 +74,6 @@ Edit `app.js`:
 
 **No build step needed** - just save and refresh!
 
-## 📊 Performance
-
-- **File Size**: ~200 KB total
-- **Load Time**: ~100ms
-- **Zero Build Time**: Instant updates
-- **Browser Support**: All modern browsers + IE11
 
 ## 🎨 Pages
 
