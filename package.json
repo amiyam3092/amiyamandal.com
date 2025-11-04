@@ -2,12 +2,15 @@
   "name": "amiyamandal-com",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://amiyam3092.github.io/amiyamandal.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --ext .ts,.tsx"
+    "lint": "eslint src --ext .ts,.tsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.462.0",
