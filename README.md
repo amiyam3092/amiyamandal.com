@@ -2,12 +2,6 @@
 
 A clean, fast, and minimal personal portfolio website built with pure HTML, CSS, and JavaScript.
 
-## 🚀 Features
-
-- **Zero Dependencies** - No frameworks, just vanilla web technologies
-- **Fast Loading** - ~200KB total size
-- **Simple Deployment** - Works on any static hosting
-- **Easy to Edit** - No build process required
 
 ## 📁 Project Structure
 
@@ -55,16 +49,6 @@ npm install
 npm run deploy
 ```
 
-Your site will be live at: `https://amiyam3092.github.io/amiyamandal.com`
-
-### Deploy to Other Platforms
-
-Simply upload all HTML, CSS, JS, and image files to:
-- Netlify (drag & drop)
-- Vercel (drag & drop)
-- Cloudflare Pages
-- AWS S3
-- Any web hosting service
 
 ## ✏️ Making Changes
 
@@ -104,16 +88,6 @@ Edit `app.js`:
 - **Experiences** (`/experiences.html`) - Coming soon
 - **Writing** (`/writing.html`) - Coming soon
 
-## 📱 Social Links
-
-- [X/Twitter](https://x.com/amiyamandal02)
-- [LinkedIn](https://www.linkedin.com/in/amiyamandal/)
-- [YouTube](https://youtube.com/)
-- [Book a Chat](https://calendly.com/amiya-mandal-3092/25-mins-catchup)
-
-## 📝 License
-
-© 2024 Amiya Mandal. All rights reserved.
 
 ---
 
