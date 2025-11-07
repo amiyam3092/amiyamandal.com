@@ -28,4 +28,51 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const sidebar = document.getElementById('sidebar');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+  const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+  const mobileHeader = document.getElementById('mobileHeader');
+
+  function openSidebar() {
+    if (sidebar && sidebarOverlay) {
+      sidebar.classList.add('open');
+      sidebarOverlay.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeSidebar() {
+    if (sidebar && sidebarOverlay) {
+      sidebar.classList.remove('open');
+      sidebarOverlay.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', openSidebar);
+  }
+
+  if (sidebarCloseBtn) {
+    sidebarCloseBtn.addEventListener('click', closeSidebar);
+  }
+
+  if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', closeSidebar);
+  }
+
+  // Close sidebar when clicking a navigation link on mobile
+  const navLinks = sidebar?.querySelectorAll('.nav-item');
+  if (navLinks) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 640) {
+          closeSidebar();
+        }
+      });
+    });
+  }
 });
